@@ -62,7 +62,7 @@
       enabled: true
       daemon_reload: true
 
-  - name: Ansible replace string example
+  - name: replace port
     replace:
       path: /opt/tomcat/conf/server.xml
       regexp: "8080"
@@ -72,10 +72,14 @@
     systemd:
       name: tomcat
       state: restarted
-      enabled: true
-      daemon_reload: true
+
 
   - name: Copy file with owner and permissions
     copy:
-        src: static-app
+        src: index.html
         dest: /home/
+
+  # - name: Stop tomcat service 
+  #   service:
+  #     name: tomcat
+  #     state: stopped
