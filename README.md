@@ -1,6 +1,6 @@
 # Ansible-assignment
 
-### In this reposatory i Wrote an ansible playbook that do the following setup on remote Linux server:
+### In this repository i Wrote an ansible playbook that do the following setup on remote Linux server:
 
 * Connect to the server with username/password.
 * Setup Tomcat
@@ -72,3 +72,5 @@
   
  * The URL to access static html page:
    http://3.19.31.174:9095
+   
+   ![alt text](https://github.com/shimaa829/Ansible-assignment/blob/master/ansible-screenshots/6.png)
